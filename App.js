@@ -12,6 +12,7 @@ import {
   ActivityIndicator,
   FlatList,
   Image,
+  LogBox,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { NavigationContainer } from "@react-navigation/native";
@@ -259,6 +260,7 @@ const Screens = () => {
   );
 };
 export default function App() {
+  LogBox.ignoreAllLogs(true);
   return (
     <NavigationContainer>
       <Stack.Navigator>

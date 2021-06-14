@@ -68,7 +68,7 @@ const data = [
 const Book = ({ navigation }) => {
   const [searchInput, SetSearchInput] = React.useState("");
   return (
-    <KeyboardAvoidingView behavior={"padding"} style={{ flex: 1 }}>
+    <View behavior={"padding"} style={{ flex: 1 }}>
       <LinearGradient
         colors={["#0D512A", "#708F51", "#0A502B"]}
         style={{ flex: 1, width, height }}
@@ -301,7 +301,7 @@ const Book = ({ navigation }) => {
           />
         </View>
       </LinearGradient>
-    </KeyboardAvoidingView>
+    </View>
   );
 };
 
